@@ -6,3 +6,7 @@ drf/__init__.py
 drf/__pycache__/
 drf/migrations/
 drf/migrations/__pycache__/
+movies/__init__.py
+movies/__pycache__/
+movies/migrations/
+movies/migrations/__pycache__/
