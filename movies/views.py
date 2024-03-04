@@ -4,9 +4,9 @@ from django.core.paginator import Paginator
 # Create your views here.
 
 def list_movie(request) :
-    movies = Movie.objects.all()
+    movies = Movie.objects.all().order_by('id')
     
-    paginator = Paginator(movies,3)
+    paginator = Paginator(movies,1) # get movie 1 movie per page
     page = request.GET.get('page')
     movies = paginator.get_page(page)
 
