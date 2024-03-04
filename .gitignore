@@ -4,4 +4,5 @@ mywebsite/__init__.py
 mywebsite/__pycache__/
 drf/__init__.py
 drf/__pycache__/
+drf/migrations/
 drf/migrations/__pycache__/
