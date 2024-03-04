@@ -7,3 +7,6 @@ class Movie(models.Model) :
     desc = models.TextField(blank=True)
     rating = models.FloatField()
     duration = models.CharField(max_length=30)
+
+    def __str__(self) :
+        return '{}. {}'.format(self.id,self.title)
