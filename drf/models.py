@@ -8,6 +8,7 @@ class Movie(models.Model) :
     rating = models.FloatField()
     duration = models.CharField(max_length=30)
     year = models.CharField(max_length=4,default="2000")
+    img = models.ImageField(max_length=None,upload_to='pictures/',default="pictures/none.jpg")
     category = models.CharField(max_length=255,default="")
 
     def __str__(self) :
