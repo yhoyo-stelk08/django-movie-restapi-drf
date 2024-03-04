@@ -7,3 +7,11 @@ from .models import Movie
 class MovieListViewClass(generics.ListAPIView) :
     queryset = Movie.objects.all()
     serializer_class = MovieSerializers
+
+class MovieFilterByCategoryClass(generics.ListAPIView) :
+    serializer_class = MovieSerializers
+
+    def get_queryset(self):
+        category = self.kwargs.get('category')
+        queryset = Movie.objects.filter(category__iexact=category)
+        return queryset
