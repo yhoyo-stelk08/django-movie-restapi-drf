@@ -7,6 +7,7 @@ class Movie(models.Model) :
     desc = models.TextField(blank=True)
     rating = models.FloatField()
     duration = models.CharField(max_length=30)
+    year = models.CharField(max_length=4,default="2000")
     category = models.CharField(max_length=255,default="")
 
     def __str__(self) :
