@@ -1,6 +1,5 @@
 db.sqlite3
 manage.py
 mywebsite/__init__.py
-mywebsite/settings.py
 mywebsite/__pycache__/
 drf/__init__.py
