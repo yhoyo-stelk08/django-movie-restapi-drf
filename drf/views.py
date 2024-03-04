@@ -12,6 +12,6 @@ class MovieFilterByCategoryClass(generics.ListAPIView) :
     serializer_class = MovieSerializers
 
     def get_queryset(self):
-        category = self.kwargs.get('category')
+        category = self.kwargs.get('categories')
         queryset = Movie.objects.filter(category__iexact=category)
         return queryset
